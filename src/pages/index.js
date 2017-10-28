@@ -1,19 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Button from '../components/button';
 
 const IndexPage = () => (
     <div>
         <div className="c-card c-card-corner">
-            <h1>Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
-            <p>Now go build something great.</p>
-            <Link to="/page-2/">Go to page 2</Link>
-        </div>
-        <div className="c-card c-card-corner">
-            <h1>Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
-            <p>Now go build something great.</p>
-            <Link to="/page-2/">Go to page 2</Link>
+            <h2>Increase User Engagement</h2>
+            <p>Modestack will help you increase user engagement by accelerating your website.</p>
+            <p>Find out soon.</p>
+            <Button link="mailto:info@modestack.co" title="Contact Us"/>
         </div>
     </div>
 )

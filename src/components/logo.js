@@ -85,7 +85,7 @@ const getModeStackLogo = () => {
 };
 
 const Logo = () => (
-    <div>
+    <div style={{display: "inline-block"}}>
 
 {getModeStackLogo()}
     </div>

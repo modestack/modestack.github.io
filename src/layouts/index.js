@@ -10,7 +10,8 @@ const Header = () => (
     <div
         style={{
             padding: '1rem',
-            borderBottom: '1px solid #eee'
+            borderBottom: '1px solid #eee',
+            'text-align': 'center'
         }}
     >
         <Logo/>
