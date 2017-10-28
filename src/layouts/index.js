@@ -21,10 +21,11 @@ const Header = () => (
 const TemplateWrapper = ({children}) => (
     <div>
         <Helmet
-            title="Gatsby Default Starter"
+            title="Increase user engagement by accelerating your website"
             meta={[
-                {name: 'description', content: 'Sample'},
-                {name: 'keywords', content: 'sample, something'},
+                {name: 'description', content: 'Modestack will help your increase user engagement by accelerating your website'},
+                {name: 'keywords', content: 'user experience, search engine optimization, web performance optimization, accessibility, ux, wpo, webperf'}/*,
+                {name: 'robots', content: 'noindex'}*/
             ]}
         />
         <Header/>
