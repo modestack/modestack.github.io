@@ -11,7 +11,7 @@ const Header = () => (
         style={{
             padding: '1rem',
             borderBottom: '1px solid #eee',
-            'text-align': 'center'
+            textAlign: 'center'
         }}
     >
         <Logo/>
