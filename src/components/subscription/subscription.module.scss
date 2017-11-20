@@ -1,0 +1,16 @@
+@import "../../styles/spacing";
+@import "../../styles/colors";
+
+.subscription {
+  padding: $padding1-v $padding1-h;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 600px;
+  margin: 40px auto;
+  background-color: $dark-blue;
+}
+.header {
+  font-size: 18px;
+  text-transform: uppercase;
+}
