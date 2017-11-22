@@ -13,9 +13,12 @@ const Subscription = () => (
         </span>
             <div className={styles.badgeContainer}>
                 <img style={{
+                    margin: '0',
                     position: 'absolute',
-                    top: '5px',
-                    right: '5px'
+                    top: '0',
+                    right: '0',
+                    cursor: 'pointer',
+                    padding: '10px',
                 }} src={closeIconSVG} alt=""/>
                 <div>
                     <BadgeIcon/>
