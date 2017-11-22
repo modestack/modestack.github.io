@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import PrimaryLink from '../components/common/links/primaryLink/primaryLink';
 import Button from '../components/button';
 import Subscription from '../components/subscription/subscription';
 
@@ -10,9 +10,9 @@ const IndexPage = () => (
             <h2>Increase User Engagement</h2>
             <p>Modestack will help you increase user engagement by accelerating your website.</p>
             <p>Find out soon.</p>
-            <Button link="mailto:info@modestack.co" title="Contact Us"/>
+            <PrimaryLink title="Contact Us" link="mailto:info@modestack.co"/>
         </div>
     </div>
 )
 
-export default IndexPage
+export default IndexPage;
