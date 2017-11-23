@@ -1,5 +1,5 @@
 import React from 'react'
-import {PrimaryLink} from '../components/common/links/link';
+import {PrimaryLink} from '../components/common/link/link';
 import Button from '../components/button';
 import Subscription from '../components/subscription/subscription';
 

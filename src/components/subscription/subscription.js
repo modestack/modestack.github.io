@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './subscription.module.scss';
 import BadgeIcon from '../icons/airplane-badge';
-import {SecondaryButton, SecondaryLink} from '../common/links/link';
+import {SecondaryButton, SecondaryLink} from '../common/link/link';
 import closeIconSVG from '../../assets/svgs/ic_close_white_24px.svg';
 
 class Subscription extends React.Component {
