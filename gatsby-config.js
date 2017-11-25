@@ -3,7 +3,7 @@ module.exports = {
     title: `Gatsby Default Starter`,
   },
   appFlags: {
-      isSubscriptionBoxEnabled: true
+      isSubscriptionBoxEnabled: false
   },
   plugins: [
       `gatsby-plugin-react-helmet`,
