@@ -1,12 +1,9 @@
 import React from 'react';
-import {appFlags} from '../../gatsby-config';
-import {PrimaryLink} from '../components/common/link/link';
-import Button from '../components/button';
+import config from '../../site-config';
 import Subscription from '../components/subscription/subscription';
 import Hero from '../components/hero/hero';
-import Card from '../components/card/card';
 
-const {isSubscriptionBoxEnabled} = appFlags;
+
 const removeSubscription = () => {
     console.log('removing subscription');
 };
@@ -16,7 +13,7 @@ class IndexPage extends React.Component {
 
         this.closeSubscription = this.closeSubscription.bind(this);
         this.state = {
-            showSubscriptionBox: isSubscriptionBoxEnabled
+            showSubscriptionBox: config.isSubscriptionEnabled
         }
     }
     closeSubscription() {

@@ -14,8 +14,10 @@
 }
 .tagline {
   color: #ffffff;
-  width: 300px;
+  max-width: 300px;
 }
 .introContainer {
-  margin: 80px $page-margin-h;
+  @include getHorizontalMargin();
+  margin-top: 80px ;
+  margin-bottom: 80px;
 }

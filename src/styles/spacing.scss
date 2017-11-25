@@ -1,3 +1,23 @@
 $padding1-v: 20px;
 $padding1-h: 20px;
-$page-margin-h: 150px;
+$page-margin-h-large: 150px;
+$page-margin-h-small: 20px;
+
+$small: 320px;
+$medium: 480px;
+$large: 960px;
+
+@mixin getHorizontalMargin() {
+  @media (max-width: $medium) {
+    margin-left: $page-margin-h-small;
+    margin-right: $page-margin-h-small;
+  }
+  @media (min-width: $medium) {
+    margin-left: $page-margin-h-small;
+    margin-right: $page-margin-h-small;
+  }
+  @media (min-width: $large) {
+    margin-left: $page-margin-h-large;
+    margin-right: $page-margin-h-large;
+  }
+}

@@ -1,5 +1,7 @@
 @import '../../styles/spacing';
 .logo {
   display: inline-block;
-  margin: auto $page-margin-h;
+  @include getHorizontalMargin();
+  margin-left: auto;
+  margin-right: auto;
 }
