@@ -1,0 +1,21 @@
+@import '../../styles/spacing';
+.skewedBackground {
+  transform: skewY(-29deg);
+  -webkit-transform: skewY(-29deg);
+  background-image: linear-gradient(-89deg, #1ca0f2 0%, #1ca0f2 30%, rgb(32,124,229));
+  height: 900px;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transform-origin: 0;
+  -webkit-transform-origin: 0;
+  z-index: -1;
+}
+.tagline {
+  color: #ffffff;
+  width: 300px;
+}
+.introContainer {
+  margin: 80px $page-margin-h;
+}

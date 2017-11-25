@@ -1,16 +1,38 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import {appFlags} from '../../gatsby-config';
+import {PrimaryLink} from '../components/common/link/link';
 import Button from '../components/button';
+import Subscription from '../components/subscription/subscription';
+import Hero from '../components/hero/hero';
+import Card from '../components/card/card';
 
-const IndexPage = () => (
-    <div>
-        <div className="c-card c-card-corner">
-            <h2>Increase User Engagement</h2>
-            <p>Modestack will help you increase user engagement by accelerating your website.</p>
-            <p>Find out soon.</p>
-            <Button link="mailto:info@modestack.co" title="Contact Us"/>
-        </div>
-    </div>
-)
+const {isSubscriptionBoxEnabled} = appFlags;
+const removeSubscription = () => {
+    console.log('removing subscription');
+};
+class IndexPage extends React.Component {
+    constructor(props) {
+        super(props);
 
-export default IndexPage
+        this.closeSubscription = this.closeSubscription.bind(this);
+        this.state = {
+            showSubscriptionBox: isSubscriptionBoxEnabled
+        }
+    }
+    closeSubscription() {
+        this.setState({
+            showSubscriptionBox: false
+        });
+    }
+    render() {
+        const subscription = this.state.showSubscriptionBox ? <Subscription removeSubscriptionBox={this.closeSubscription}/> : null;
+        return (
+            <div>
+                <Hero/>
+                {subscription}
+            </div>
+        )
+    }
+}
+
+export default IndexPage;

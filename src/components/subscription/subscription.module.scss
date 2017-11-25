@@ -1,0 +1,40 @@
+@import "../../styles/spacing";
+@import "../../styles/colors";
+
+.subscription {
+  color: #ffffff;
+  padding: $padding1-v $padding1-h;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  background-color: $darker-blue;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+  border-radius: 5px;
+  p {
+    font-size: .75rem;
+  }
+}
+.topSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.badgeContainer {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 82%;
+}
