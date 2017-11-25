@@ -2,31 +2,46 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './link.module.scss';
 
-const linkPropTypes = {
+const commonPropTypes = {
     title: PropTypes.string.isRequired,
+    textColor: PropTypes.string,
+    backgroundColor: PropTypes.string
+};
+const linkPropTypes = {
+    ...commonPropTypes,
     link: PropTypes.string.isRequired
 };
 const buttonPropTypes = {
-    title: PropTypes.string,
+    ...commonPropTypes,
     clickHandler: PropTypes.func.isRequired
 };
 
+export const Link = ({title, link, textColor, backgroundColor}) => (
+    <a href={link} className={styles.link} style={{backgroundColor: backgroundColor, color: textColor}}>{title}</a>
+);
+
+Link.propTypes = linkPropTypes;
+
 export const SecondaryLink = ({title, link}) => (
-    <a href={link} className={styles.secondaryLink}>{title}</a>
+    <Link link={link} title={title} textColor='#1E365C' backgroundColor='#eeeeee'/>
 );
 SecondaryLink.propTypes = linkPropTypes;
 
 export const PrimaryLink = ({title, link}) => (
-    <a href={link} className={styles.link}>{title}</a>
+    <Link link={link} title={title} textColor='#fff' backgroundColor='#207ce5'/>
 );
 PrimaryLink.propTypes = linkPropTypes;
 
+export const Button = ({title, clickHandler, backgroundColor, textColor}) => (
+    <button onClick={clickHandler} className={styles.link} style={{backgroundColor: backgroundColor, color: textColor}}>{title}</button>
+);
+Button.propTypes = buttonPropTypes;
 export const SecondaryButton = ({title, clickHandler}) => (
-    <button onClick={clickHandler} className={styles.secondaryLink}>{title}</button>
+    <Button clickHandler={clickHandler} title={title} textColor='#1E365C' backgroundColor='#eeeeee'/>
 );
 SecondaryButton.propTypes = buttonPropTypes;
 
 export const PrimaryButton = ({title, clickHandler}) => (
-    <button onClick={clickHandler} className={styles.link}>{title}</button>
+    <Button clickHandler={clickHandler} title={title} textColor='#fff' backgroundColor='#207ce5'/>
 );
 PrimaryButton.propTypes = buttonPropTypes;
