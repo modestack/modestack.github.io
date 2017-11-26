@@ -8,8 +8,8 @@ const Hero = () => {
             <div className={styles.skewedBackground}></div>
             <div className={styles.introContainer}>
                 <div className={styles.tagline}>
-                    <h1>Modestack will make your site blazingly fast</h1>
-                    <p>Modestack will help you increase user engagement by accelerating your website.
+                    <h1>Modstack will make your site blazingly fast</h1>
+                    <p>Modstack will help you increase user engagement by accelerating your website.
 
                         Find out soon.</p>
                 </div>

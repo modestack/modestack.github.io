@@ -1,7 +1,3 @@
-@import '../../styles/spacing';
 .logo {
   display: inline-block;
-  @include getHorizontalMargin();
-  margin-left: auto;
-  margin-right: auto;
 }

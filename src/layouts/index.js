@@ -1,23 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import Logo from '../components/logo/logo';
-
 import '../styles/app.scss';
+import Header from '../components/header/header';
 
-const Header = () => (
-    <div
-        style={{
-            padding: '1rem 0',
-            borderBottom: '1px solid rgba(255,255,255,0.2)',
-            textAlign: 'left'
-        }}
-    >
-        <Logo overrideLettersColor='#fff'/>
-    </div>
-
-)
 
 const TemplateWrapper = ({children}) => (
     <div>
