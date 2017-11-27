@@ -1,11 +1,8 @@
+@import './variables';
 $padding1-v: 20px;
 $padding1-h: 20px;
 $page-margin-h-large: 150px;
 $page-margin-h-small: 20px;
-
-$small: 320px;
-$medium: 480px;
-$large: 960px;
 
 @mixin getHorizontalMargin() {
   @media (max-width: $medium) {
