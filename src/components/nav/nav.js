@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './nav.module.scss';
 import MenuIcon from '../../components/icons/menu-icon';
-
-const {Component} = React;
+import CloseIcon from '../../components/icons/close-icon';
 
 const Nav = ({mobileExpandHandler, isMobileMenuExpanded}) => {
-    const icon = isMobileMenuExpanded ? <div>x</div> : <MenuIcon/>;
+    const icon = isMobileMenuExpanded ? <CloseIcon /> : <MenuIcon/>;
     let inlineStyes;
     if (isMobileMenuExpanded) {
         inlineStyes = {

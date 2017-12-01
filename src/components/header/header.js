@@ -31,7 +31,6 @@ class Header extends React.Component {
     }
     expandMobileMenu() {
         const {isMobileMenuExpanded} = this.state;
-        console.log('toggling', isMobileMenuExpanded);
         this.setState({isMobileMenuExpanded: !isMobileMenuExpanded});
     }
 

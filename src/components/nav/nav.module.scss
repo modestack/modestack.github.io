@@ -15,13 +15,14 @@
     height: 100vh;
     position: absolute;
     left: 50%;
+    right: 50%;
     top: 0;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin: 0;
     line-height: 1;
     font-family: 'Abel', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     flex-direction: column;
     @media (min-width: $large) {
       height: auto;
@@ -39,7 +40,10 @@
     list-style: none;
     display: inline-block;
     margin: 0;
-    padding: 5px;
+    padding: 15px 5px;
+    @media (min-width: $large) {
+      padding: 5px;
+    }
     &:hover {
       color: #ffffff;
     }
