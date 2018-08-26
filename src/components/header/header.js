@@ -17,7 +17,8 @@ class Header extends React.Component {
         const {isMobileMenuExpanded} = this.state;
         if (isMobileMenuExpanded) {
             inlineStyles = {
-                height: '100vh'
+                height: '100vh',
+                backgroundColor: '#1E365C'
             };
         }
         return (

@@ -15,10 +15,10 @@ const Nav = ({mobileExpandHandler, isMobileMenuExpanded}) => {
         <nav className={styles.nav}>
             <ul style={inlineStyes}>
                 <li>
-                    <a href="#">Features</a>
+                    <a href="#">Services</a>
                 </li>
                 <li>
-                    <a href="#">Pricing</a>
+                    <a href="#">Team</a>
                 </li>
                 <li>
                     <a href="#">Blog</a>
