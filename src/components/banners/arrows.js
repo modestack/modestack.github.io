@@ -1,7 +1,9 @@
 import React from 'react';
+import styles from './arrows.module.scss';
+
 const Arrows = () => {
     return (
-        <div>
+        <div className={styles.arrows}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 591 591">
                 <rect width="591" height="591" fill="#0e2f4e" />
                 <polygon points="139.86 391.31 246.98 284.19 181.23 218.44 427.23 169.44 378.23 415.44 312.98 350.19 205.86 457.31 139.86 391.31"
