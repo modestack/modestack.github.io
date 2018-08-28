@@ -1,3 +1,3 @@
 export default {
-    isSubscriptionEnabled: true
+    isSubscriptionEnabled: false
 }

@@ -6,7 +6,6 @@ import Arrows from '../../components/banners/arrows';
 const Hero = () => {
   return (
     <div>
-      <div className={styles.skewedBackground}></div>
       <Arrows/>
       <div className={styles.introContainer}>
         <div className={styles.tagline}>
