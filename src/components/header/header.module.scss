@@ -1,0 +1,18 @@
+@import '../../styles/spacing';
+@import '../../styles/variables';
+.header {
+  transition: 300ms;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  text-align: left;
+}
+.headerContent {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  @include getHorizontalMargin();
+  @media (min-width: $large) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

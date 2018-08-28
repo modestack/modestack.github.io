@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './subscription.module.scss';
 import BadgeIcon from '../icons/airplane-badge';
 import {SecondaryButton, SecondaryLink} from '../common/link/link';
-import closeIconSVG from '../../assets/svgs/ic_close_white_24px.svg';
+import CloseIcon from '../../components/icons/close-icon';
 
 class Subscription extends React.Component {
   render() {
@@ -16,14 +16,16 @@ class Subscription extends React.Component {
         <p>By subscribing to our weekly newsletter you will get the latest resources to improve user engagement of your website </p>
         </span>
                   <div className={styles.badgeContainer} onClick={removeSubscriptionBox}>
-                      <img style={{
+                      <div style={{
                           margin: '0',
                           position: 'absolute',
                           top: '0',
                           right: '0',
                           cursor: 'pointer',
                           padding: '10px',
-                      }} src={closeIconSVG} alt=""/>
+                      }}>
+                          <CloseIcon />
+                      </div>
                       <div>
                           <BadgeIcon/>
                       </div>
