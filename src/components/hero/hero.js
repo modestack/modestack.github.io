@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './_hero.module.scss';
-import { Link } from "../common/link/link";
+import { Link, SecondaryLink } from "../common/link/link";
 import Arrows from '../../components/banners/arrows';
 
 const Hero = () => {
@@ -9,12 +9,12 @@ const Hero = () => {
       <Arrows/>
       <div className={styles.introContainer}>
         <div className={styles.tagline}>
-          <h1>Modstack will make your site fast and delightful</h1>
-          <p>Modstack will help you increase user engagement by accelerating your website.
+          <h1>We make super fast websites</h1>
+          <p>Modestack will help you increase user engagement by accelerating your website.
 
             Find out soon.</p>
         </div>
-        <Link title='Contact us' link='mailto:info@modestack.co' backgroundColor='#fff' textColor='#207CE5'/>
+        <SecondaryLink title='Contact us' link='mailto:info@modestack.co'/>
       </div>
 
     </div>
