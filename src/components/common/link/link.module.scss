@@ -9,9 +9,16 @@
   font-family: sans-serif;
   cursor: pointer;
   text-decoration: none;
+  &:hover {
+    background-color: $light-blue-alpha;
+  }
+  transition: background-color .3s;
 }
 .secondaryLink {
   @extend .link;
   color: $darker-blue;
-  background-color: $light-grey
+  background-color: $light-grey;
+  &:hover {
+    background-color: $light-grey-alpha;
+  }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './services-summary.module.scss';
 import Circle from '../../components/icons/circle';
+import { SecondaryLink } from "../common/link/link";
 
 const ServiceTitle = ({title, color}) => (
   <div className={styles.summaryItemHeader}>
@@ -16,26 +17,37 @@ export const ServicesSummary = () => {
     <div className={styles.servicesContainer}>
       <div className={styles.summaryItem}>
         <ServiceTitle color='#C2F0DC' title='Accessibility Audit'/>
-        <p>Modestack will take care of everything to ensure your digital assets are compliant with existing accessibility regulations.
-          We will also support development teams in ensuring all future work is compliant</p>
+        <p>Modestack will ensure your web assets are compliant with existing accessibility regulations.</p>
+        <div>
+          <SecondaryLink title='Read More'/>
+        </div>
       </div>
       <div className={styles.summaryItem}>
         <ServiceTitle color='#FBC33D' title='Performance Analysis'/>
         <p>
-          Performance is crucial for converting leads into sales. Work with the experts in order to gain an edge in your engagements with customers.
+          Performance is crucial for converting leads into sales. Modestack can help you beat the competition.
         </p>
+        <div>
+          <SecondaryLink title='Read More'/>
+        </div>
       </div>
       <div className={styles.summaryItem}>
         <ServiceTitle color='#43b7e7' title='Web Development'/>
         <p>
           Modestack uses the latest technology and tools to build the best and fastest websites.
         </p>
+        <div>
+          <SecondaryLink title='Read More'/>
+        </div>
       </div>
       <div className={styles.summaryItem}>
         <ServiceTitle color='#F0405E' title='Cross Platform Apps'/>
         <p>
           Modestack will help you implement your idea across all platforms.
         </p>
+        <div>
+          <SecondaryLink title='Read More'/>
+        </div>
       </div>
     </div>
   )

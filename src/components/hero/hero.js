@@ -9,12 +9,10 @@ const Hero = () => {
       <Arrows/>
       <div className={styles.introContainer}>
         <div className={styles.tagline}>
-          <h1>We make super fast websites</h1>
-          <p>Modestack will help you increase user engagement by accelerating your website.
-
-            Find out soon.</p>
+          <h1>We make super engaging digital experiences</h1>
+          <p>Modestack will help you increase user engagement by accelerating your websites and apps.</p>
         </div>
-        <SecondaryLink title='Contact us' link='mailto:info@modestack.co'/>
+        <Link title='Contact us' link='mailto:info@modestack.co'/>
       </div>
 
     </div>

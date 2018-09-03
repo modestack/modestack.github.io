@@ -16,14 +16,14 @@ const buttonPropTypes = {
     clickHandler: PropTypes.func.isRequired
 };
 
-export const Link = ({title, link, textColor, backgroundColor}) => (
-    <a href={link} className={styles.link} style={{backgroundColor: backgroundColor, color: textColor}}>{title}</a>
+export const Link = ({title, link, textColor, backgroundColor, className = styles.link}) => (
+    <a href={link} className={className} style={{backgroundColor: backgroundColor, color: textColor}}>{title}</a>
 );
 
 Link.propTypes = linkPropTypes;
 
 export const SecondaryLink = ({title, link}) => (
-    <Link link={link} title={title} textColor='#1E365C' backgroundColor='#eeeeee'/>
+    <Link link={link} title={title} textColor='#1E365C' className={styles.secondaryLink}/>
 );
 SecondaryLink.propTypes = linkPropTypes;
 
