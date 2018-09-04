@@ -9,6 +9,7 @@
   max-width: 1200px;
   margin: 0 auto;
   justify-content: space-around;
+  flex-wrap: wrap;
   p {
     min-height: 120px;
   }
@@ -20,6 +21,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin-right: 40px;
+  margin-bottom: 64px;
   h2 {
     font-size: 18px;
     margin-bottom: 0;
@@ -30,8 +32,29 @@
   align-items: center;
   margin-bottom: 26px;
 }
+.materialIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+}
 .icon {
-  width: 30px;
-  height: 30px;
+  position: relative;
+  width: 32px;
+  height: 32px;
   margin-right: 10px;
+}
+.circle {
+  opacity: .5;
+  height: 32px;
+  width: 32px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

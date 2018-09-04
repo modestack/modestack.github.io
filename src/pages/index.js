@@ -3,6 +3,7 @@ import config from '../../site-config';
 import Subscription from '../components/subscription/subscription';
 import Hero from '../components/hero/hero';
 import {ServicesSummary} from '../components/services-summary/index';
+import {ClientSummary} from '../components/client-summary/clientSummary';
 
 
 const removeSubscription = () => {
@@ -29,6 +30,7 @@ class IndexPage extends React.Component {
                 <Hero/>
                 {subscription}
                 <ServicesSummary></ServicesSummary>
+                <ClientSummary></ClientSummary>
             </div>
         )
     }
