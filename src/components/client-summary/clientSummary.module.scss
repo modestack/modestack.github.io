@@ -1,0 +1,17 @@
+.container {
+  margin-top: 40px;
+  padding: 40px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .logo {
+    width: 150px;
+    opacity: .25;
+    padding-bottom: 40px;
+  }
+  img {
+    margin: 0;
+  }
+}
